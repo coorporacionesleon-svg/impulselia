@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Impulselia — Marketing digital con redes, web e IA en Ecuador</title>
+  <meta name="description" content="Impulselia ayuda a empresas y profesionales en Ecuador a crecer con redes sociales, páginas web, perfil de Google y contenido con IA que usted aprueba. Diagnóstico gratis.">
+  <meta name="theme-color" content="#0E5C4C">
+  <link rel="canonical" href="https://coorporacionesleon-svg.github.io/impulselia/">
+  <meta property="og:url" content="https://coorporacionesleon-svg.github.io/impulselia/">
+  <meta name="author" content="Impulselia">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_EC">
+  <meta property="og:site_name" content="Impulselia">
+  <meta property="og:title" content="Impulselia — Hacemos crecer su negocio con redes, web e IA">
+  <meta property="og:description" content="Agencia de marketing digital en Ecuador. Redes sociales, páginas web, perfil de Google y contenido con IA, con fotos reales en su negocio. Diagnóstico gratis.">
+  <meta property="og:image" content="https://coorporacionesleon-svg.github.io/impulselia/assets/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Impulselia: Hacemos crecer su negocio con redes, web e IA.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Impulselia — Hacemos crecer su negocio con redes, web e IA">
+  <meta name="twitter:description" content="Agencia de marketing digital en Ecuador. Redes, web, perfil de Google y contenido con IA. Diagnóstico gratis.">
+  <meta name="twitter:image" content="https://coorporacionesleon-svg.github.io/impulselia/assets/img/og.jpg">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch.png">
+  <link rel="preload" href="assets/fonts/lexend.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/dm-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    @font-face{font-family:Lexend;src:url("assets/fonts/lexend.woff2") format("woff2");font-weight:100 900;font-display:swap}
+    @font-face{font-family:"DM Sans";src:url("assets/fonts/dm-sans.woff2") format("woff2");font-weight:100 900;font-display:swap}
+
+    :root{
+      --bg:#fff;
+      --soft:#f5f5f3;
+      --ink:#111;
+      --muted:#5c5c5c;
+      --line:#e6e6e4;
+      --accent:#0E5C4C;
+      --accent-hover:#0a463a;
+      --on-accent:#fff;
+      --max:1120px;
+      --disp:"Lexend",system-ui,sans-serif;
+      --sans:"DM Sans",system-ui,sans-serif;
+      --wa:https://wa.me/593958952980?text=Hola%20Impulselia%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.5;font-size:18px;font-weight:400}
+    img,svg{display:block;max-width:100%;height:auto}
+    a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
+    a:hover{color:var(--accent-hover)}
+    :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+    .skip{position:absolute;left:-999px;top:0;background:var(--accent);color:#fff;padding:.75rem 1rem;z-index:100}
+    .skip:focus{left:1rem;top:1rem}
+
+    .wrap{width:min(var(--max), calc(100% - 40px));margin-inline:auto}
+    @media(min-width:800px){.wrap{width:min(var(--max), calc(100% - 80px))}}
+
+    /* Header */
+    header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.86);backdrop-filter:saturate(160%) blur(14px);-webkit-backdrop-filter:saturate(160%) blur(14px);border-bottom:1px solid transparent;transition:border-color .2s}
+    header.is-stuck{border-bottom-color:var(--line)}
+    .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+    .brand{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-family:var(--disp);font-weight:700;font-size:1.15rem;letter-spacing:-.01em}
+    .brand img,.brand svg{width:32px;height:32px}
+    .nav-toggle{display:none}
+    .burger{display:none;width:44px;height:44px;border:0;background:transparent;cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:6px}
+    .burger span{display:block;width:20px;height:1.5px;background:var(--ink)}
+    .links{display:flex;align-items:center;gap:28px}
+    .links a{color:var(--ink);text-decoration:none;font-size:.95rem;font-weight:500}
+    .links a:hover{color:var(--accent)}
+    .links .wa-btn{margin-left:8px}
+    @media(max-width:760px){
+      .burger{display:flex}
+      .links{display:none;position:absolute;left:0;right:0;top:68px;flex-direction:column;align-items:stretch;gap:0;background:#fff;border-bottom:1px solid var(--line);padding:8px 20px 20px}
+      .nav-toggle:checked ~ .links{display:flex}
+      .links a{padding:12px 0;border-bottom:1px solid var(--line)}
+      .links .wa-btn{margin:12px 0 0;text-align:center}
+    }
+
+    /* Buttons */
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--disp);font-weight:600;font-size:1rem;line-height:1;border-radius:999px;padding:16px 24px;text-decoration:none;border:1.5px solid transparent;transition:background .2s,color .2s,transform .2s,box-shadow .2s}
+    .btn-p{background:var(--accent);color:var(--on-accent);box-shadow:0 10px 24px rgba(14,92,76,.18)}
+    .btn-p:hover{background:var(--accent-hover);color:#fff;transform:translateY(-1px)}
+    .btn-g{background:transparent;color:var(--ink);border-color:var(--line)}
+    .btn-g:hover{border-color:var(--ink);color:var(--ink)}
+    .btn svg{width:18px;height:18px;flex:0 0 auto}
+
+    /* Hero */
+    .hero{padding:56px 0 88px;position:relative}
+    @media(min-width:800px){.hero{padding:72px 0 96px;min-height:calc(100svh - 68px);display:flex;align-items:center}}
+    .hero-grid{display:grid;gap:40px}
+    @media(min-width:900px){
+      .hero-grid{grid-template-columns:1fr 200px;align-items:end;gap:48px}
+    }
+    .eyebrow{font-family:var(--disp);font-weight:600;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:22px}
+    h1{font-family:var(--disp);font-weight:700;letter-spacing:-.035em;line-height:1.02;font-size:clamp(2.7rem, 9.2vw, 5.15rem);max-width:18ch}
+    .lead{margin-top:24px;font-size:clamp(1.05rem, 2vw, 1.3rem);color:var(--muted);max-width:34ch;line-height:1.45}
+    .hero-cta{display:flex;flex-wrap:wrap;align-items:center;gap:16px 22px;margin-top:36px}
+    .phone{font-family:var(--disp);font-weight:600;color:var(--ink);text-decoration:none;font-size:1.05rem}
+    .phone:hover{color:var(--accent)}
+    .sello{width:148px;height:148px;margin-inline:auto}
+    @media(max-width:899px){.sello-wrap{display:none}}
+
+    /* Sections */
+    section{padding:80px 0}
+    @media(min-width:800px){section{padding:104px 0}}
+    .kicker{font-family:var(--disp);font-weight:600;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+    h2{font-family:var(--disp);font-weight:700;letter-spacing:-.03em;line-height:1.08;font-size:clamp(1.9rem, 4.6vw, 3.25rem)}
+    .section-head{margin-bottom:48px}
+    .section-head p{margin-top:14px;color:var(--muted);font-size:1.1rem;max-width:36ch;line-height:1.45}
+
+    /* Services */
+    #servicios{background:var(--soft);border-block:1px solid var(--line)}
+    .svc{display:grid;gap:0;border-top:1px solid var(--line)}
+    @media(min-width:720px){.svc{grid-template-columns:1fr 1fr}}
+    .svc article{padding:32px 0;border-bottom:1px solid var(--line)}
+    @media(min-width:720px){
+      .svc article{padding:40px 36px 40px 0}
+      .svc article:nth-child(even){padding-left:36px;padding-right:0;border-left:1px solid var(--line)}
+    }
+    .svc .n{font-family:var(--disp);font-weight:600;color:var(--accent);font-size:.85rem;letter-spacing:.08em;margin-bottom:10px}
+    .svc h3{font-family:var(--disp);font-weight:650;font-size:1.45rem;letter-spacing:-.02em;margin-bottom:8px}
+    .svc p{color:var(--muted);max-width:36ch}
+
+    /* Portfolio */
+    .grid-works{display:grid;gap:28px}
+    @media(min-width:720px){.grid-works{grid-template-columns:repeat(3,1fr);gap:32px 24px}}
+    .work{text-decoration:none;color:inherit;display:block}
+    .work .pic{background:var(--soft);overflow:hidden;border-radius:8px;aspect-ratio:1/1}
+    .work .pic.sq{aspect-ratio:1/1}.work .pic.wide{aspect-ratio:16/10}
+    @media(min-width:720px){
+      .work.span{grid-column:1/-1}
+      .work.span .pic{aspect-ratio:16/9}
+    }
+    .work img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease}
+    .work:hover img{transform:scale(1.03)}
+    .work h3{font-family:var(--disp);font-weight:650;font-size:1.25rem;letter-spacing:-.02em;margin-top:14px}
+    .work p{color:var(--muted);font-size:.98rem;margin-top:2px}
+    .work .go{display:inline-block;margin-top:8px;font-family:var(--disp);font-weight:600;font-size:.9rem;color:var(--accent)}
+
+    /* Plans */
+    #paquetes{background:var(--soft);border-block:1px solid var(--line)}
+    .plans{display:grid;gap:18px}
+    @media(min-width:860px){.plans{grid-template-columns:1fr 1fr 1fr;gap:20px;align-items:stretch}}
+    .plan{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px 26px 30px;display:flex;flex-direction:column;position:relative}
+    .plan.hi{border:2px solid var(--accent);box-shadow:0 18px 40px rgba(14,92,76,.1);padding-top:36px}
+    .badge{position:absolute;top:-13px;left:24px;background:var(--accent);color:#fff;font-family:var(--disp);font-weight:700;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+    .plan h3{font-family:var(--disp);font-weight:650;font-size:1.15rem;color:var(--accent)}
+    .price{font-family:var(--disp);font-weight:700;letter-spacing:-.03em;font-size:3rem;line-height:1;margin:10px 0 6px}
+    .price small{font-size:1rem;font-weight:500;color:var(--muted);letter-spacing:0}
+    .plan .sub{color:var(--muted);font-size:.95rem;margin-bottom:16px}
+    .plan ul{list-style:none;display:flex;flex-direction:column;gap:9px;margin:8px 0 22px;flex:1}
+    .plan li{padding-left:26px;position:relative;font-size:.95rem;line-height:1.4;color:#2a2a2a}
+    .plan li::before{content:"";position:absolute;left:0;top:.45em;width:12px;height:8px;border-left:2px solid var(--accent);border-bottom:2px solid var(--accent);transform:rotate(-45deg)}
+    .note,.foot-note{color:var(--muted);font-size:.9rem;line-height:1.5;margin-top:22px}
+    .strip{margin-top:28px;padding:20px 22px;border-radius:16px;border:1px dashed color-mix(in srgb, var(--accent) 45%, var(--line));background:#fff;color:#2a2a2a;font-size:.98rem;line-height:1.5}
+
+    /* Compare */
+    .cmp{display:grid;gap:16px}
+    @media(min-width:800px){.cmp{grid-template-columns:1fr 1fr 1.15fr;gap:18px;align-items:stretch}}
+    .card{border:1px solid var(--line);border-radius:20px;padding:26px 24px;background:#fff}
+    .card.hi{border:2px solid var(--accent);background:var(--ink);color:#fff}
+    .card.hi p,.card.hi li,.card.hi .who-sub{color:#d4d4d4}
+    .card.hi .price small{color:#bcbcbc}
+    .card .who{font-family:var(--disp);font-weight:650;font-size:1.2rem}
+    .who-sub{color:var(--muted);font-size:.92rem;margin:4px 0 12px}
+    .card .price{font-size:2.4rem;margin:4px 0}
+    .plus{font-size:1rem;margin-bottom:12px}
+    .card.hi .plus{color:#eee}
+    .card ul{list-style:none;margin-top:14px;display:flex;flex-direction:column;gap:8px}
+    .card li{padding-left:22px;position:relative;font-size:.95rem}
+    .card.hi li::before{content:"";position:absolute;left:0;top:.5em;width:11px;height:7px;border-left:2px solid #7dcdc0;border-bottom:2px solid #7dcdc0;transform:rotate(-45deg)}
+
+    /* Risk */
+    #sin-riesgo{background:var(--soft);border-block:1px solid var(--line)}
+    .risk{display:grid;gap:22px}
+    @media(min-width:700px){.risk{grid-template-columns:1fr 1fr;gap:28px 32px}}
+    .risk article h3{font-family:var(--disp);font-weight:650;font-size:1.3rem;letter-spacing:-.02em;margin-bottom:6px}
+    .risk p{color:var(--muted);max-width:34ch}
+    .close{margin-top:48px;font-family:var(--disp);font-weight:650;font-size:clamp(1.2rem, 2.6vw, 1.7rem);letter-spacing:-.02em;line-height:1.3;max-width:24ch}
+    .close em{font-style:normal;color:var(--accent)}
+
+
+    /* Pago */
+    .pay{display:grid;gap:16px}
+    @media(min-width:700px){.pay{grid-template-columns:1fr 1fr;gap:20px;align-items:stretch}}
+    .pay .card{display:flex;flex-direction:column;justify-content:center;min-height:100%}
+    .pay .card h3{font-family:var(--disp);font-weight:650;font-size:1.25rem;letter-spacing:-.02em;margin-bottom:8px}
+    .pay .card p{color:var(--muted);font-size:1.05rem;line-height:1.45;max-width:28ch}
+
+    /* CTA */
+    #contacto{padding-bottom:72px}
+    #contacto h2{max-width:18ch}
+    #contacto .lead{margin-top:18px}
+    .cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:16px 22px;margin-top:32px}
+
+    footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:.92rem}
+    @media(max-width:600px){.foot{align-items:flex-start}.foot .sello{margin-left:auto}}
+    .foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+    .foot-brand{display:flex;align-items:center;gap:14px;color:var(--ink);font-family:var(--disp);font-weight:700}
+    .foot .sello{width:72px;height:72px}
+    .legal{max-width:42ch}
+
+    /* Motion */
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      .work img,.btn{transition:none}
+      .btn-p:hover{transform:none}
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#inicio">Saltar al contenido</a>
+  <header>
+    <div class="wrap bar">
+      <a class="brand" href="#inicio">
+        <img src="assets/img/favicon.svg" width="32" height="32" alt="">
+        Impulselia
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" autocomplete="off">
+      <label class="burger" for="nav-toggle" aria-label="Abrir menú"><span></span><span></span><span></span></label>
+      <nav class="links" aria-label="Principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#paquetes">Paquetes</a>
+        <a href="#contacto">Contacto</a>
+        <a class="btn btn-p wa-btn" href="https://wa.me/593958952980?text=Hola%20Impulselia%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Especialistas en IA para empresas · Ecuador</p>
+          <h1>Hacemos crecer<br>su negocio con<br>redes, web e IA.</h1>
+          <p class="lead">Fotos reales, contenido que usted aprueba y un perfil de Google al día.</p>
+          <div class="hero-cta">
+            <a class="btn btn-p" href="https://wa.me/593958952980?text=Hola%20Impulselia%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 2.1 17.3L1 23l5.8-1.1A11 11 0 0 0 20.5 3.5zm-8.5 17a9.1 9.1 0 0 1-4.6-1.3l-.33-.2-3.45.66.67-3.36-.22-.35A9.1 9.1 0 1 1 12 20.5zm5.2-6.8c-.28-.14-1.66-.82-1.92-.91-.26-.1-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.16.18-.33.21-.61.07-.28-.14-1.18-.43-2.25-1.39-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.33.42-.5.14-.16.19-.28.28-.47.1-.18.05-.35-.02-.5-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48h-.55c-.19 0-.5.07-.76.35-.26.28-1 1-1 2.43s1.03 2.82 1.17 3.02c.14.19 2.02 3.08 4.9 4.32.68.3 1.22.47 1.64.6.69.22 1.31.19 1.8.11.55-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.11-.25-.18-.53-.32z"/></svg>
+              Quiero mi diagnóstico gratis
+            </a>
+            <a class="phone" href="https://wa.me/593958952980?text=Hola%20Impulselia%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis">WhatsApp 095 895 2980</a>
+          </div>
+        </div>
+        <div class="sello-wrap">
+          <img class="sello" src="assets/img/sello.svg" width="148" height="148" alt="Especialistas en IA para empresas, Ecuador">
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Servicios</p>
+          <h2>Lo que hacemos<br>por su marca</h2>
+        </div>
+        <div class="svc">
+          <article>
+            <div class="n">01</div>
+            <h3>Redes sociales</h3>
+            <p>Instagram, Facebook y TikTok, con fotos y reels reales de su negocio.</p>
+          </article>
+          <article>
+            <div class="n">02</div>
+            <h3>Páginas web</h3>
+            <p>Claras, pensadas para el celular, con un botón directo a WhatsApp.</p>
+          </article>
+          <article>
+            <div class="n">03</div>
+            <h3>Perfil de Google</h3>
+            <p>Para que lo encuentren en Google y en Maps, con fotos, horarios y reseñas atendidas.</p>
+          </article>
+          <article>
+            <div class="n">04</div>
+            <h3>Contenido con IA</h3>
+            <p>La IA nos ayuda a producir. Usted revisa y aprueba todo antes de publicar.</p>
+          </article>
+          <article>
+            <div class="n">05</div>
+            <h3>Asistente de WhatsApp con IA</h3>
+            <p>Responde preguntas frecuentes, ofrece citas y envía recordatorios. No diagnostica ni entrega resultados.</p>
+          </article>
+          <article>
+            <div class="n">06</div>
+            <h3>Sesiones con Sony Alpha</h3>
+            <p>Vamos a su local con cámara profesional: fotos y video reales de su espacio y su equipo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="portafolio">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Portafolio</p>
+          <h2>Marcas que ya<br>confían en nosotros</h2>
+        </div>
+        <div class="grid-works">
+          <a class="work" href="https://www.instagram.com/licorinoec/" target="_blank" rel="noopener noreferrer">
+            <div class="pic sq"><img src="assets/img/licorino.webp" alt="Publicaciones de Instagram de Licorino EC: licores, cocteles y marcas" width="1080" height="1080"></div>
+            <h3>Licorino</h3>
+            <p>Licores y cocteles</p>
+            <span class="go">Ver Instagram ↗</span>
+          </a>
+          <a class="work" href="https://www.instagram.com/dulce.pretexto/" target="_blank" rel="noopener noreferrer">
+            <div class="pic"><img src="assets/img/dulce-pretexto.webp" alt="Postre de lima de la repostería Dulce Pretexto, en Quito" width="607" height="640"></div>
+            <h3>Dulce Pretexto</h3>
+            <p>Repostería · Quito</p>
+            <span class="go">Ver Instagram ↗</span>
+          </a>
+          <a class="work" href="https://www.instagram.com/hosterialoscedros/" target="_blank" rel="noopener noreferrer">
+            <div class="pic"><img src="assets/img/los-cedros.webp" alt="Letrero de madera de la Hostería Los Cedros, en Mindo" width="360" height="640"></div>
+            <h3>Hostería Los Cedros</h3>
+            <p>Hostería · Mindo</p>
+            <span class="go">Ver Instagram ↗</span>
+          </a>
+          <a class="work span" href="https://medicina-interna-leo-gpl3zv.abacusai.app/" target="_blank" rel="noopener noreferrer">
+            <div class="pic wide"><img src="assets/img/dr-leon.webp" style="object-position:top center" alt="Página web del Dr. Franklin León, médico internista" width="1280" height="800"></div>
+            <h3>Dr. Franklin León</h3>
+            <p>Página web · Medicina interna</p>
+            <span class="go">Ver sitio ↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="paquetes">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Paquetes mensuales</p>
+          <h2>Elija el plan<br>para su negocio</h2>
+        </div>
+        <div class="plans">
+          <article class="plan">
+            <h3>Esencial</h3>
+            <div class="price">$220<small>/mes</small></div>
+            <p class="sub">Para empezar con lo básico.</p>
+            <ul>
+              <li>Instagram + Facebook</li>
+              <li>8 diseños + 2 reels al mes</li>
+              <li>1 sesión mensual de fotos (la primera: consultorio o local y equipo, 15 fotos editadas)</li>
+              <li>Publicación y respuestas básicas</li>
+              <li>Perfil de Google</li>
+              <li>Actualización de web aparte: $200</li>
+              <li>Asistente de WhatsApp con IA: opcional, con costo adicional</li>
+            </ul>
+            <a class="btn btn-g" href="https://wa.me/593958952980?text=Hola%20Impulselia%2C%20me%20interesa%20el%20paquete%20Esencial">Elegir Esencial</a>
+          </article>
+          <article class="plan hi">
+            <div class="badge">Más recomendado</div>
+            <h3>Profesional</h3>
+            <div class="price">$380<small>/mes</small></div>
+            <p class="sub">Incluye web y WhatsApp con IA, sin costo de instalación.</p>
+            <ul>
+              <li>Instagram + Facebook + TikTok</li>
+              <li>12 piezas al mes, incluye 4 reels con guion</li>
+              <li>1 sesión mensual de fotos y video</li>
+              <li>Calendario de contenidos</li>
+              <li>Respuestas a comentarios</li>
+              <li>Actualización de su web incluida, con sus fotos nuevas</li>
+              <li>Perfil de Google</li>
+              <li>Asistente de WhatsApp con IA incluido, sin costo de instalación</li>
+            </ul>
+            <a class="btn btn-p" href="https://wa.me/593958952980?text=Hola%20Impulselia%2C%20me%20interesa%20el%20paquete%20Profesional">Elegir Profesional</a>
+          </article>
+          <article class="plan">
+            <h3>Premium</h3>
+            <div class="price">$600<small>/mes</small></div>
+            <p class="sub">Todo lo del Profesional, y además:</p>
+            <ul>
+              <li>20 piezas al mes, incluye 8 reels</li>
+              <li>2 sesiones de fotos y video al mes</li>
+              <li>Web actualizada + mantenimiento mensual</li>
+              <li>Reporte mensual sencillo</li>
+              <li>Atención prioritaria</li>
+              <li>Perfil de Google</li>
+              <li>Asistente de WhatsApp con IA incluido</li>
+            </ul>
+            <a class="btn btn-g" href="https://wa.me/593958952980?text=Hola%20Impulselia%2C%20me%20interesa%20el%20paquete%20Premium">Elegir Premium</a>
+          </article>
+        </div>
+        <div class="strip"><strong>En los 3 paquetes:</strong> sesión mensual con cámara profesional Sony Alpha · contenido hecho con apoyo de IA y aprobado por usted · perfil de Google · mes a mes, sin permanencia.</div>
+        <p class="note">Precios referenciales, sin IVA; publicidad pagada aparte.</p>
+      </div>
+    </section>
+
+    <section id="por-que">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Comparación</p>
+          <h2>¿Por qué Impulselia?</h2>
+          <p>Comparado con precios publicados por otras agencias en Ecuador.</p>
+        </div>
+        <div class="cmp">
+          <article class="card">
+            <div class="who">Grafico Webs</div>
+            <p class="who-sub">Marketing médico · plan Presencia Médica</p>
+            <div class="price">$495<small>/mes</small></div>
+            <p class="plus">+ $300 de pauta</p>
+            <p>Facebook e Instagram, 8 reels al mes y campaña en Meta Ads. Su página no menciona sesiones de fotos en el consultorio.</p>
+          </article>
+          <article class="card">
+            <div class="who">AndesIA</div>
+            <p class="who-sub">Asistente de WhatsApp con IA para clínicas</p>
+            <div class="price">$249<small>/mes</small></div>
+            <p class="plus">+ instalación desde $990</p>
+            <p>Agenda y recordatorios por WhatsApp. Es un servicio de asistente con IA.</p>
+          </article>
+          <article class="card hi">
+            <div class="who">Impulselia</div>
+            <p class="who-sub">Redes, web, Google y WhatsApp con IA</p>
+            <div class="price"><small>desde </small>$220<small>/mes</small></div>
+            <p class="plus">Profesional $380/mes, con asistente de WhatsApp con IA incluido, sin costo de instalación.</p>
+            <ul>
+              <li>Sesión mensual con cámara Sony Alpha incluida</li>
+              <li>Perfil de Google en los 3 planes</li>
+              <li>Asistente de WhatsApp con IA (incluido en Profesional y Premium)</li>
+              <li>Contenido con IA que usted aprueba antes de publicar</li>
+              <li>Mes a mes, sin contratos largos</li>
+              <li>Diagnóstico gratis y 3 contenidos de muestra antes de decidir</li>
+            </ul>
+          </article>
+        </div>
+        <p class="foot-note">Precios publicados en sus sitios web, consultados el 11/11/2026; pueden cambiar. Nuestros precios sin IVA.</p>
+      </div>
+    </section>
+
+    <section id="sin-riesgo">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Sin riesgo para usted</p>
+          <h2>Empiece con tranquilidad</h2>
+        </div>
+        <div class="risk">
+          <article>
+            <h3>Diagnóstico gratis</h3>
+            <p>Revisamos sus redes y su web actual, sin costo ni compromiso.</p>
+          </article>
+          <article>
+            <h3>3 contenidos de muestra</h3>
+            <p>Le mostramos 3 piezas hechas para usted antes de pagar.</p>
+          </article>
+          <article>
+            <h3>Mes a mes, sin permanencia</h3>
+            <p>Continúa solo si está satisfecho con el trabajo.</p>
+          </article>
+          <article>
+            <h3>Usted aprueba todo</h3>
+            <p>Ningún contenido se publica sin su revisión.</p>
+          </article>
+        </div>
+        <p class="close">Nada se publica sin su visto bueno. <em>Usted revisa y aprueba cada pieza.</em></p>
+      </div>
+    </section>
+
+
+    <section id="pago">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Pago</p>
+          <h2>Pague como le resulte más fácil</h2>
+        </div>
+        <div class="pay">
+          <article class="card">
+            <h3>Transferencia</h3>
+            <p>Banco Pichincha [DATOS_BANCO_PICHINCHA]</p>
+          </article>
+          <article class="card">
+            <h3>Tarjeta de crédito o débito</h3>
+            <p>Le enviamos un link de pago por WhatsApp.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="wrap">
+        <p class="kicker">Siguiente paso</p>
+        <h2>¿Cuál es su próximo paso?</h2>
+        <p class="lead">Confirme el paquete que necesita. Si nos escribe hoy, esta misma semana hacemos la primera sesión de fotos.</p>
+        <div class="cta-row">
+          <a class="btn btn-p" href="https://wa.me/593958952980?text=Hola%20Impulselia%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 2.1 17.3L1 23l5.8-1.1A11 11 0 0 0 20.5 3.5zm-8.5 17a9.1 9.1 0 0 1-4.6-1.3l-.33-.2-3.45.66.67-3.36-.22-.35A9.1 9.1 0 1 1 12 20.5zm5.2-6.8c-.28-.14-1.66-.82-1.92-.91-.26-.1-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.16.18-.33.21-.61.07-.28-.14-1.18-.43-2.25-1.39-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.33.42-.5.14-.16.19-.28.28-.47.1-.18.05-.35-.02-.5-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48h-.55c-.19 0-.5.07-.76.35-.26.28-1 1-1 2.43s1.03 2.82 1.17 3.02c.14.19 2.02 3.08 4.9 4.32.68.3 1.22.47 1.64.6.69.22 1.31.19 1.8.11.55-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.11-.25-.18-.53-.32z"/></svg>
+            Escribir por WhatsApp
+          </a>
+          <a class="phone" href="https://wa.me/593958952980?text=Hola%20Impulselia%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis">095 895 2980</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div class="foot-brand">
+        <img src="assets/img/favicon.svg" width="32" height="32" alt="">
+        <div>
+          <div>Impulselia</div>
+          <div class="legal">© 2026 Impulselia. Especialistas en IA para empresas · Ecuador.</div>
+        </div>
+      </div>
+      <img class="sello" src="assets/img/sello.svg" width="72" height="72" alt="">
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      var h=document.querySelector("header");
+      var on=function(){h.classList.toggle("is-stuck", window.scrollY>8)};
+      on();
+      window.addEventListener("scroll", on, {passive:true});
+      document.querySelectorAll(".links a").forEach(function(a){
+        a.addEventListener("click", function(){
+          var t=document.getElementById("nav-toggle");
+          if(t) t.checked=false;
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
