@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://coorporacionesleon-svg.github.io/impulselia/sitemap.xml
