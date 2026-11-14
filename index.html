@@ -133,11 +133,13 @@
     .grid-works{display:grid;gap:28px}
     @media(min-width:720px){.grid-works{grid-template-columns:repeat(3,1fr);gap:32px 24px}}
     .work{text-decoration:none;color:inherit;display:block}
-    .work .pic{background:var(--soft);overflow:hidden;border-radius:8px;aspect-ratio:1/1}
-    .work .pic.sq{aspect-ratio:1/1}.work .pic.wide{aspect-ratio:16/10}
+    .work .pics{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+    .work .pic{background:var(--soft);overflow:hidden;border-radius:8px;aspect-ratio:4/5}
+    .work.span .pics{grid-template-columns:1.4fr 1.4fr .9fr;gap:8px}
+    .work.span .pic{aspect-ratio:16/10}
+    .work.span .pic.phone{aspect-ratio:9/16}
     @media(min-width:720px){
       .work.span{grid-column:1/-1}
-      .work.span .pic{aspect-ratio:16/9}
     }
     .work img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease}
     .work:hover img{transform:scale(1.03)}
@@ -370,25 +372,41 @@
         </div>
         <div class="grid-works">
           <a class="work" href="https://www.instagram.com/licorinoec/" target="_blank" rel="noopener noreferrer">
-            <div class="pic sq"><img loading="lazy" decoding="async" src="assets/img/licorino.webp" alt="Publicaciones de Instagram de Licorino EC: licores, cocteles y marcas" width="1080" height="1080"></div>
+            <div class="pics" aria-label="Tres fotos de Licorino">
+              <div class="pic"><img loading="lazy" decoding="async" src="assets/img/experiencia/licorino-01.jpg" alt="Publicación de Licorino: cóctel Hendrick's Gin" width="463" height="715"></div>
+              <div class="pic"><img loading="lazy" decoding="async" src="assets/img/experiencia/licorino-02.jpg" alt="Publicación de Licorino: Aperol Spritz" width="463" height="703"></div>
+              <div class="pic"><img loading="lazy" decoding="async" src="assets/img/experiencia/licorino-03.jpg" alt="Publicación de Licorino: Disaronno" width="463" height="682"></div>
+            </div>
             <h3>Licorino</h3>
             <p>Licores y cocteles</p>
             <span class="go">Ver Instagram ↗</span>
           </a>
           <a class="work" href="https://www.instagram.com/dulce.pretexto/" target="_blank" rel="noopener noreferrer">
-            <div class="pic"><img loading="lazy" decoding="async" src="assets/img/dulce-pretexto.webp" alt="Postre de lima de la repostería Dulce Pretexto, en Quito" width="607" height="640"></div>
+            <div class="pics" aria-label="Tres fotos de Dulce Pretexto">
+              <div class="pic"><img loading="lazy" decoding="async" src="assets/img/experiencia/dulce-01.jpg" alt="Publicación de Dulce Pretexto: postre de limón" width="607" height="640"></div>
+              <div class="pic"><img loading="lazy" decoding="async" src="assets/img/experiencia/dulce-02.jpg" alt="Publicación de Dulce Pretexto: galletas" width="480" height="640"></div>
+              <div class="pic"><img loading="lazy" decoding="async" src="assets/img/experiencia/dulce-03.jpg" alt="Publicación de Dulce Pretexto: brownie crumble" width="512" height="640"></div>
+            </div>
             <h3>Dulce Pretexto</h3>
             <p>Repostería · Quito</p>
             <span class="go">Ver Instagram ↗</span>
           </a>
           <a class="work" href="https://www.instagram.com/hosterialoscedros/" target="_blank" rel="noopener noreferrer">
-            <div class="pic"><img loading="lazy" decoding="async" src="assets/img/los-cedros.webp" alt="Letrero de madera de la Hostería Los Cedros, en Mindo" width="360" height="640"></div>
+            <div class="pics" aria-label="Tres fotos de Hostería Los Cedros">
+              <div class="pic"><img loading="lazy" decoding="async" src="assets/img/experiencia/cedros-01.jpg" alt="Publicación de Hostería Los Cedros: letrero de entrada" width="360" height="640"></div>
+              <div class="pic"><img loading="lazy" decoding="async" src="assets/img/experiencia/cedros-02.jpg" alt="Publicación de Hostería Los Cedros: pareja en la entrada" width="480" height="640"></div>
+              <div class="pic"><img loading="lazy" decoding="async" src="assets/img/experiencia/cedros-03.jpg" alt="Publicación de Hostería Los Cedros: pareja en la piscina" width="361" height="640"></div>
+            </div>
             <h3>Hostería Los Cedros</h3>
             <p>Hostería · Mindo</p>
             <span class="go">Ver Instagram ↗</span>
           </a>
           <a class="work span" href="https://medicina-interna-leo-gpl3zv.abacusai.app/" target="_blank" rel="noopener noreferrer">
-            <div class="pic wide"><img loading="lazy" decoding="async" src="assets/img/dr-leon.webp" style="object-position:top center" alt="Página web del Dr. Franklin León, médico internista" width="1280" height="800"></div>
+            <div class="pics" aria-label="Tres capturas de la web del Dr. Franklin León">
+              <div class="pic"><img loading="lazy" decoding="async" src="assets/img/experiencia/leon-01-desktop-home.jpg" alt="Inicio de la página web del Dr. Franklin León" width="2160" height="1350" style="object-position:top center"></div>
+              <div class="pic"><img loading="lazy" decoding="async" src="assets/img/experiencia/leon-02-desktop-servicios.jpg" alt="Sección de servicios de la página web" width="2160" height="1350" style="object-position:top center"></div>
+              <div class="pic phone"><img loading="lazy" decoding="async" src="assets/img/experiencia/leon-03-mobile-home.jpg" alt="Vista en celular de la página web" width="780" height="1688" style="object-position:top center"></div>
+            </div>
             <h3>Dr. Franklin León</h3>
             <p>Página web · Medicina interna</p>
             <span class="go">Ver sitio ↗</span>
